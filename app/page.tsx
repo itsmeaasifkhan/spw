@@ -42,7 +42,7 @@ export default function Home() {
 
         <LoveMeterSection />
 
-        <FutureDreamsSection dreams={loveData.futureDreams} />
+        {/* <FutureDreamsSection dreams={loveData.futureDreams} /> */}
 
         <RelationshipCounter
           startDate={loveData.relationshipStartDate}

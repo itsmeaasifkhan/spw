@@ -1,81 +1,135 @@
 export const loveData = {
-  girlfriendName: "Sofia",
-  myName: "Aryan",
+  girlfriendName: "Lilly",
+  myName: "Aasif",
 
-  relationshipStartDate: "2022-09-14",
+  relationshipStartDate: "2026-05-13",
 
   romanticMessages: [
-    "You are the poem I never knew how to write, the song I always needed to hear.",
-    "With you, every ordinary moment becomes something I want to remember forever.",
-    "You didn't just walk into my life — you lit it up from the inside.",
+    "Before you, I never realized how much happiness one person could bring into someone else's life.",
+
+    "You are the first person I want to tell good news to, and the only person I want beside me during the difficult days.",
+
+    "No matter how many days we spend together, I know I'll never stop falling in love with you."
   ],
 
-  loveLetter: `My dearest Sofia,
+  loveLetter: `My Dearest Lilly,
 
-There are moments when I look at you and forget every word I've ever known. You make silence feel like the most beautiful language.
+Sometimes I wonder how I got so lucky to have you in my life.
 
-From the very first time I saw you laugh — really laugh — I knew something in me had shifted permanently. Like a compass finally finding north. I didn't have a word for it then. Now I know the word is you.
+You have become such an important part of my days. Whether we're talking, laughing, or simply spending time together, every moment feels a little brighter because of you.
 
-You have this rare and extraordinary gift: you make everyone around you feel seen. But the way you see me — the way you notice the small things, the quiet moods, the unspoken thoughts — that is something I will spend a lifetime being grateful for.
+I love the way you make me smile without even trying. I love how you care, how you listen, and how you always manage to make me feel understood. Being with you brings a comfort and happiness that I truly value.
 
-I love you for your curiosity, the way you pause in the middle of a walk to look at something beautiful most people would have walked past. I love you for your honesty, even when it's tender and hard. I love you for how fiercely you care about the people and things that matter to you.
+Thank you for being supportive, patient, and for always being yourself. You inspire me to be better every day, and I'm grateful for every memory we've created together.
 
-I am not the same person I was before you. I am quieter in the best ways, braver in the ways that count. You have made me want to be worthy of the love you give so generously.
+You are deeply appreciated, truly special to me, and one of the best things that has happened in my life.
 
-Every day with you is proof that the world contains more warmth than I ever imagined.
+Forever yours,
 
-All of my heart, always —
-${`Aryan`}`,
+${`Aasif`},`,
 
   reasonsILoveHer: [
-    { icon: "✨", title: "Your Laugh", description: "The way you laugh — from somewhere real and deep — is my favorite sound in the entire world." },
-    { icon: "🌿", title: "Your Curiosity", description: "You notice things others miss. You make the ordinary feel endlessly interesting." },
-    { icon: "💫", title: "Your Honesty", description: "You say what you mean with such care. Your truth always feels like a gift, never a wound." },
-    { icon: "🌙", title: "Your Gentleness", description: "Even when the world is loud, you bring a quiet that feels like coming home." },
-    { icon: "🔥", title: "Your Passion", description: "When something matters to you, you give it everything. Watching you care is breathtaking." },
-    { icon: "🌸", title: "Your Kindness", description: "You extend grace to people without keeping score. It's one of the most beautiful things about you." },
-    { icon: "🌊", title: "Your Depth", description: "Conversations with you feel like wandering into a sea that's both vast and warm." },
-    { icon: "🎨", title: "Your Way of Seeing", description: "You find beauty in places I wouldn't have thought to look. You've changed how I see the world." },
+    {
+      icon: "😊",
+      title: "Your Smile",
+      description:
+        "No matter what kind of day I'm having, your smile has a way of making everything feel a little lighter and a lot better."
+    },
+    {
+      icon: "😂",
+      title: "Your Laugh",
+      description:
+        "Your laugh is my favorite sound. It's genuine, contagious, and somehow makes every moment more special."
+    },
+    {
+      icon: "❤️",
+      title: "The Way You Care",
+      description:
+        "You care so deeply about the people you love. The little things you do never go unnoticed, and they mean more to me than you know."
+    },
+    {
+      icon: "🌸",
+      title: "Your Kind Heart",
+      description:
+        "You have a beautiful way of making people feel valued, understood, and loved. Your kindness is one of the many reasons I admire you."
+    },
+    {
+      icon: "✨",
+      title: "Being Yourself",
+      description:
+        "You never try to be anyone else, and that's one of the things I love most about you. You are completely, wonderfully yourself."
+    },
+    {
+      icon: "🌙",
+      title: "Your Presence",
+      description:
+        "Being with you brings a sense of peace I can't really explain. Somehow, everything feels better when you're around."
+    },
+    {
+      icon: "🤍",
+      title: "The Way You Understand Me",
+      description:
+        "You understand me in ways that no one else ever has. With you, I can be completely myself without fear of being judged."
+    },
+    {
+      icon: "💫",
+      title: "The Life We Share",
+      description:
+        "It's not just the big moments I love. It's the ordinary days, the random conversations, and every little memory we create together."
+    }
   ],
 
   memoryCards: [
     {
-      emoji: "🌧️",
-      title: "The Rainy Evening",
-      description: "We were supposed to go out but it started pouring. We stayed in, made tea, and talked until 2am. I didn't want that night to end.",
-      date: "October 2022",
+      emoji: "🛍️",
+      title: "The Day We Met",
+      description: "You arrived with a mutual friend, and at that moment you were just another person I had never met before. We spent the day shopping, talking a little, and I had no idea how important you would become to me.",
+      date: "The Beginning",
     },
     {
-      emoji: "🌅",
-      title: "First Sunrise Together",
-      description: "You dragged me out of bed at 5am claiming the sunrise would be worth it. You were right. You always are.",
-      date: "January 2023",
+      emoji: "🎧",
+      title: "One Earphone, Two Hearts",
+      description: "That bus journey to Dehradun will always be special to me. We spent hours listening to songs through a single earphone, sharing music, conversations, and comfortable silences.",
+      date: "Our First Trip",
     },
     {
-      emoji: "🎂",
-      title: "Your Birthday",
-      description: "I tried to bake you a cake. It didn't look anything like a cake. You ate two pieces anyway and told me it was perfect.",
-      date: "March 2023",
+      emoji: "🚌",
+      title: "The Night Journey",
+      description: "As the journey got longer, we both drifted in and out of sleep. Sometimes you rested on my shoulder, sometimes I found comfort leaning against you. It felt natural, easy, and strangely familiar.",
+      date: "Dehradun Trip",
     },
     {
-      emoji: "🚂",
-      title: "The Train Journey",
-      description: "Six hours and we didn't once run out of things to say. I remember thinking: I could do this forever.",
-      date: "June 2023",
+      emoji: "🏔️",
+      title: "Welcome to Mussoorie",
+      description: "After reaching Dehradun, we headed to Mussoorie. Tired from the journey, we checked into our rooms and slept for a few hours before starting our adventure together.",
+      date: "Mussoorie",
     },
     {
-      emoji: "🌟",
-      title: "Stargazing Night",
-      description: "We lay on a blanket in the dark trying to name constellations we didn't know. You made up the best names.",
-      date: "August 2023",
+      emoji: "🛵",
+      title: "Exploring Together",
+      description: "One of my favorite memories is riding around Mussoorie with you sitting behind me on the scooty. We explored roads, forests, viewpoints, laughed endlessly, and made memories I'll never forget.",
+      date: "Mussoorie Days",
     },
     {
-      emoji: "☕",
-      title: "Our Sunday Ritual",
-      description: "Coffee, slow mornings, no plans. Somehow these quiet hours became my favorite hours of the week.",
-      date: "Ongoing",
+      emoji: "🌲",
+      title: "Getting Lost, Finding Us",
+      description: "We wandered through the city, explored quiet roads and beautiful places, and spent hours simply enjoying each other's company. Somewhere between those conversations and laughs, our bond grew stronger.",
+      date: "2–3 Beautiful Days",
+    },
+    {
+      emoji: "🏡",
+      title: "Time After the Trip",
+      description: "When we returned home, we spent more time together. The trip may have brought us closer, but it was those everyday moments afterward that made our connection truly special.",
+      date: "After Mussoorie",
+    },
+    {
+      emoji: "❤️",
+      title: "Us",
+      description: "What started as a simple meeting turned into one of the most meaningful chapters of my life. Looking back, it's amazing how one unexpected trip changed everything.",
+      date: "Forever",
     },
   ],
+
 
   futureDreams: [
     { emoji: "🏡", title: "A Home We Build", description: "A space that's entirely ours — bookshelves, good light, and a kitchen we cook in together." },
@@ -86,7 +140,7 @@ ${`Aryan`}`,
     { emoji: "🌙", title: "Every Ordinary Night", description: "Just this. Just us. Quiet evenings that somehow feel like everything." },
   ],
 
-  specialQuote: "You are not someone I fell in love with. You are someone I keep choosing, every single day — and I would choose you in every version of every life.",
+  specialQuote: "Loving you isn't something that happened once. It's a choice I make every day, and somehow, every day it becomes easier to choose you again."
 };
 
 export type LoveData = typeof loveData;
