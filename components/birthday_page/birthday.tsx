@@ -229,9 +229,10 @@ export default function BirthdayPage() {
           font-family: 'Cormorant Garamond', serif;
           font-style: italic;
           font-size: 1.05rem;
-          color: #cbb98f;
+          color: #f1e4c6;
           letter-spacing: 0.02em;
           margin-top: 0.6rem;
+          text-shadow: 0 1px 6px rgba(0,0,0,0.5);
         }
 
         .divider {
@@ -248,7 +249,7 @@ export default function BirthdayPage() {
           font-size: 0.78rem;
           letter-spacing: 0.18em;
           text-transform: uppercase;
-          color: #d4af7a;
+          color: #f1e4c6;
           background: transparent;
           border: 1px solid rgba(212,175,122,0.55);
           border-radius: 2px;
@@ -330,20 +331,21 @@ export default function BirthdayPage() {
           margin-top: 8px;
           font-family: 'Playfair Display', serif;
           font-style: italic;
-          color: #d4af7a;
+          color: #f6ecd4;
           font-size: 0.95rem;
           letter-spacing: 0.05em;
+          text-shadow: 0 1px 6px rgba(0,0,0,0.6);
         }
 
         .wish-card {
-          background: linear-gradient(135deg, rgba(212,175,122,0.08), rgba(92,26,43,0.12));
+          background: linear-gradient(135deg, rgba(212,175,122,0.1), rgba(92,26,43,0.16));
           border: 1px solid rgba(212,175,122,0.28);
           border-radius: 3px;
           padding: 1rem 1.1rem;
           font-family: 'Cormorant Garamond', serif;
           font-style: italic;
           font-size: 1.05rem;
-          color: #eadfc7;
+          color: #f8f0dc;
           line-height: 1.5;
           opacity: 0;
           animation: slideUp 0.7s ease-out forwards;
@@ -381,9 +383,10 @@ export default function BirthdayPage() {
         .signature {
           font-family: 'Cormorant Garamond', serif;
           font-style: italic;
-          color: #cbb98f;
+          color: #f1e4c6;
           font-size: 0.95rem;
           margin-top: 1.4rem;
+          text-shadow: 0 1px 6px rgba(0,0,0,0.5);
         }
 
         @media (prefers-reduced-motion: reduce) {
@@ -431,9 +434,14 @@ export default function BirthdayPage() {
 
                 {step === 0 && (
                     <div className="step-enter" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <div className="seal">
-                            <span className="seal-letter">S</span>
-                        </div>
+                        {/* <div className="seal">
+                            <span className="seal-letter text-sm">Saniya</span>
+                        </div> */}
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-e-djcjFH98fj9Jv_nG8sF6inWQKYEXbh5GFIbLp9PA&s=10"
+                            alt="Birthday celebration"
+                            className="w-32 h-32 rounded-full object-cover border-4 border-yellow-400 shadow-lg"
+                        />
                         <h1 className="lux-title">{displayText}</h1>
                         <div className="divider" />
                         <p className="lux-sub">Ek khaas dawat, sirf aapke naam</p>
