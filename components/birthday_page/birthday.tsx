@@ -434,9 +434,7 @@ export default function BirthdayPage() {
 
                 {step === 0 && (
                     <div className="step-enter" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        {/* <div className="seal">
-                            <span className="seal-letter text-sm">Saniya</span>
-                        </div> */}
+
                         <img
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-e-djcjFH98fj9Jv_nG8sF6inWQKYEXbh5GFIbLp9PA&s=10"
                             alt="Birthday celebration"
@@ -452,18 +450,63 @@ export default function BirthdayPage() {
                 {step === 1 && (
                     <div className="step-enter" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                         <p className="lux-sub" style={{ marginBottom: '1.6rem' }}>Aankhein band karo aur ek wish maango</p>
-                        <div className="cake-wrap">
-                            <div className="candles">
+                        <div className="cake-wrap flex flex-col items-center">
+                            {/* Candles */}
+                            <div className="candles flex gap-3 mb-1 z-20">
                                 {[0, 1, 2].map((c) => (
-                                    <div className="candle" key={c}>
+                                    <div className="candle flex flex-col items-center" key={c}>
                                         {candlesLit && <div className="flame" />}
                                         <div className="wick" />
+                                        <div className="candle-body" />
                                     </div>
                                 ))}
                             </div>
-                            <div className="cake-body">
-                                <div className="cake-band" />
-                                <span className="cake-icing">Sali Ji</span>
+
+                            {/* Cake */}
+                            <div className="relative flex flex-col items-center">
+                                {/* Top layer */}
+                                <div className="relative w-32 h-14 bg-gradient-to-b from-pink-300 to-pink-500 rounded-t-2xl rounded-b-lg shadow-md z-10">
+                                    <div className="absolute top-0 left-0 w-full h-4 bg-white rounded-t-2xl">
+                                        <div className="absolute top-2 left-3 w-3 h-4 bg-white rounded-b-full" />
+                                        <div className="absolute top-2 left-10 w-3 h-5 bg-white rounded-b-full" />
+                                        <div className="absolute top-2 right-10 w-3 h-4 bg-white rounded-b-full" />
+                                        <div className="absolute top-2 right-3 w-3 h-5 bg-white rounded-b-full" />
+                                    </div>
+                                </div>
+
+                                {/* Middle layer */}
+                                <div className="relative w-40 h-16 bg-gradient-to-b from-pink-400 to-pink-600 rounded-t-xl rounded-b-lg shadow-lg z-10 -mt-1">
+                                    <div className="absolute top-0 left-0 w-full h-5 bg-white rounded-t-xl">
+                                        <div className="absolute top-3 left-4 w-4 h-5 bg-white rounded-b-full" />
+                                        <div className="absolute top-3 left-14 w-4 h-6 bg-white rounded-b-full" />
+                                        <div className="absolute top-3 right-14 w-4 h-5 bg-white rounded-b-full" />
+                                        <div className="absolute top-3 right-4 w-4 h-6 bg-white rounded-b-full" />
+                                    </div>
+                                    <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-white font-bold text-sm">
+                                        Sali Ji
+                                    </div>
+                                </div>
+
+                                {/* Bottom layer */}
+                                <div className="relative w-52 h-20 bg-gradient-to-b from-pink-500 to-pink-700 rounded-t-xl rounded-b-2xl shadow-xl z-10 -mt-1">
+                                    <div className="absolute top-0 left-0 w-full h-6 bg-white rounded-t-xl">
+                                        <div className="absolute top-4 left-6 w-5 h-6 bg-white rounded-b-full" />
+                                        <div className="absolute top-4 left-16 w-5 h-7 bg-white rounded-b-full" />
+                                        <div className="absolute top-4 right-16 w-5 h-6 bg-white rounded-b-full" />
+                                        <div className="absolute top-4 right-6 w-5 h-7 bg-white rounded-b-full" />
+                                    </div>
+
+                                    {/* Decorations */}
+                                    <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+                                        <div className="w-3 h-3 bg-yellow-300 rounded-full shadow-md" />
+                                        <div className="w-3 h-3 bg-purple-300 rounded-full shadow-md" />
+                                        <div className="w-3 h-3 bg-yellow-300 rounded-full shadow-md" />
+                                    </div>
+                                </div>
+
+                                {/* Cake stand */}
+                                <div className="w-64 h-3 bg-gradient-to-r from-gray-300 to-gray-500 rounded-full shadow-lg mt-1" />
+                                <div className="w-20 h-6 bg-gradient-to-b from-gray-400 to-gray-600 rounded-b-full shadow-md" />
                             </div>
                         </div>
                         <button className="lux-btn" onClick={nextStep}>Blow the Candles</button>
