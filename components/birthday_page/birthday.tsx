@@ -19,13 +19,12 @@ interface ConfettiPiece {
     gold: boolean;
 }
 
-export default function BirthdayPage() {
+export default function BirthdayPage({ name, dob }: { name?: string, dob?: string }) {
     const [step, setStep] = useState<number>(0);
     const [displayText, setDisplayText] = useState<string>('');
     const [candlesLit, setCandlesLit] = useState<boolean>(true);
     const [confetti, setConfetti] = useState<ConfettiPiece[]>([]);
-
-    const title = 'Happy Birthday, Sali Ji';
+    const title = `Happy Birthday, ${name}`;
 
     useEffect(() => {
         let index = 0;
@@ -434,12 +433,29 @@ export default function BirthdayPage() {
 
                 {step === 0 && (
                     <div className="step-enter" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-
-                        <img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-e-djcjFH98fj9Jv_nG8sF6inWQKYEXbh5GFIbLp9PA&s=10"
-                            alt="Birthday celebration"
-                            className="w-32 h-32 rounded-full object-cover border-4 border-yellow-400 shadow-lg"
-                        />
+                        <h2
+                            className="
+        text-3xl
+        md:text-4xl
+        font-black
+        tracking-wide
+        bg-gradient-to-r
+        from-yellow-200
+        via-yellow-400
+        to-amber-700
+        bg-clip-text
+        text-transparent
+        drop-shadow-[0_2px_10px_rgba(255,215,0,0.8)]
+        animate-pulse
+        select-none
+        font-serif
+      "
+                            style={{
+                                fontFamily: "'Cinzel Decorative', serif",
+                            }}
+                        >
+                            {name}
+                        </h2> 
                         <h1 className="lux-title">{displayText}</h1>
                         <div className="divider" />
                         <p className="lux-sub">Ek khaas dawat, sirf aapke naam</p>
@@ -483,7 +499,7 @@ export default function BirthdayPage() {
                                         <div className="absolute top-3 right-4 w-4 h-6 bg-white rounded-b-full" />
                                     </div>
                                     <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-white font-bold text-sm">
-                                        Sali Ji
+                                        ${name}
                                     </div>
                                 </div>
 
@@ -530,7 +546,7 @@ export default function BirthdayPage() {
                             </div>
                             <div className="cake-body">
                                 <div className="cake-band" />
-                                <span className="cake-icing">Sali Ji</span>
+                                <span className="cake-icing">${name}</span>
                             </div>
                         </div>
                         <button className="lux-btn" onClick={nextStep}>Reveal the Wishes</button>
@@ -561,7 +577,7 @@ export default function BirthdayPage() {
                         <p className="lux-sub" style={{ maxWidth: '270px', marginTop: '0.6rem' }}>
                             Zindagi hamesha khushiyon, pyaar aur khaamosh kamiyabi se lipti rahe.
                         </p>
-                        <p className="signature">— pyaar se, aapka future jija</p>
+                        {/* <p className="signature">— pyaar se, aapka future jija</p> */}
                         <button className="lux-btn" onClick={restart}>Begin Again</button>
                     </div>
                 )}
