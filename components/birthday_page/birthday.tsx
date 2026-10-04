@@ -2,10 +2,19 @@
 
 import { useEffect, useState } from 'react';
 
+// const wishes: string[] = [
+//     'Aapka janamdin hansi, pyaar aur khoobsurat yaadon se bhara rahe, aur har pal aapke chehre par muskaan laaye.',
+//     'Allah aapko hamesha khushiyan, kamiyabi, achi sehat aur zindagi ki har khushi se nawaze.',
+//     'Aapke saare sapne sach hon apko duniya ki har khusi mile',
+// ];
 const wishes: string[] = [
-    'Aapka janamdin hansi, pyaar aur khoobsurat yaadon se bhara rahe, aur har pal aapke chehre par muskaan laaye.',
-    'Allah aapko hamesha khushiyan, kamiyabi, achi sehat aur zindagi ki har khushi se nawaze.',
-    'Aapke saare sapne sach hon,aur apko DamanPreet jaisa husband mile.',
+
+    'Aapka janamdin meri dua hai ki aapki zindagi hamesha pyaar, khushiyon aur khoobsurat yaadon se bhari rahe, aur aapki har muskaan meri duniya ko aur khoobsurat bana de.',
+
+    'Allah aapko hamesha khush rakhe, har kadam par kamiyabi de, achi sehat de, aur aapki zindagi ko itni khushiyon se bhar de jitni aap mere dil ke kareeb hain.',
+
+    'Aapke saare sapne sach hon, aapko duniya ki har khushi mile, aur meri sabse khoobsurat dua hamesha aapke saath rahe — kyunki aapki khushi mere liye sabse khaas hai.',
+
 ];
 
 const STEP_COUNT = 5;
@@ -573,7 +582,7 @@ export default function BirthdayPage({ name, dob }: { name?: string, dob?: strin
                         <div className="seal" style={{ width: '86px', height: '86px' }}>
                             <span className="seal-letter" style={{ fontSize: '2rem' }}>♥</span>
                         </div>
-                        <h2 className="lux-title" style={{ fontSize: '1.8rem' }}>Hamesha Chamakte Raho</h2>
+                        <h2 className="lux-title" style={{ fontSize: '1.8rem' }}>Hamesha Khush Raho</h2>
                         <p className="lux-sub" style={{ maxWidth: '270px', marginTop: '0.6rem' }}>
                             Zindagi hamesha khushiyon, pyaar aur khaamosh kamiyabi se lipti rahe.
                         </p>
